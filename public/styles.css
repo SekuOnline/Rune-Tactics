@@ -1,0 +1,294 @@
+/* ---------------------------
+Global
+----------------------------*/
+@font-face {
+    font-family: 'UrbaneRounded-DemiBold';
+    src: url('/UrbaneRounded-DemiBold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Quicksand';
+    src: url('Quicksand-Medium.ttf') format('truetype');
+}
+
+html, body{
+    margin:0px;
+    /* background-color: #1A275d; */
+    /* background-color: #1D2542; */
+    height:100%;
+    background-image: url("./img/RuneTactics_Homepage.jpg")
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+    color:#F2f3f7;
+    font-size:larger;
+    width:fit-content;
+    font-family: 'UrbaneRounded-DemiBold';
+}
+
+li a:hover{
+    /* color: #66F8BC; */
+    color: #9EEAFA;
+    /* background-color: #444; */
+    transition: 0.3s;
+}
+
+input[type=text]{
+    font-size: small;
+    font-family:'Quicksand';
+}
+
+.footer{
+    background-color: #0b0c19;
+    display:flex;
+    align-items: flex-start;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: 65px;
+}
+.footer input[type="image"]{
+    margin-right:5px;
+    width:40px;
+    height:40px;
+    margin-left:15px;
+    margin-top:4px;
+    margin-bottom:4px;
+}
+
+.WrapBody{
+    min-height: 100%;
+    margin-bottom: -64px;
+}
+
+/* ---------------------------------------
+Classed 
+------------------------------------------*/
+
+
+/* ---------------------------------------
+Horizontal: Represents the nav-bar
+------------------------------------------*/
+nav.horizontal{
+    display:flex;
+    justify-content: flex-start;
+    border-bottom:solid #6475F8 1px;
+    background-color: #2C3D70;
+   
+    height:65px;
+    /* background-image: url('img/David_Web_Banner4.png'); */
+    background-position: 0;
+}
+
+.horizontal ul{
+    
+    display: flex;
+    padding:0;
+    align-items: center;
+    list-style: none;
+    flex-grow: 1;    
+    justify-content: space-evenly;
+}
+
+.horizontal li{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+   
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+
+
+/* ---------------------------------------
+DeckContainer: Contains the 3 VerticalThinBoxes,. Holds everything except the header/footer
+------------------------------------------*/
+.CodeContainer input[type="text"]{
+    background-color: #F2f3f7;
+    border: solid 2px #1A275D;
+    border-radius: 10px;
+}
+
+.DeckContainer{
+    /* Contains "VerticalThinBoxes */
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom:65px;
+}
+
+
+/* ---------------------------------------
+VerticalThinBox: Within DeckContainers. Holds DeckBoxes and CardBoxes
+------------------------------------------*/
+
+
+.VerticalThinBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* height: 200px; */
+    width: 20%;
+    height:30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 18px;
+    margin-left:2%;
+    margin-right:2%;
+    overflow: hidden;
+    /* margin-top: 20px; */
+    height: auto;
+    background-color: #6475F8;
+}
+
+.HiddenVB{
+    display:block;
+    width: 20%;
+    height:30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 18px;
+    margin-left:2%;
+    margin-right:2%;
+}
+/* ---------------------------------------
+Deckboxes: Hold all the card-boxes. Vertical.
+------------------------------------------*/
+.DeckBox{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.DeckCodeBox{
+    /* margin-bottom: 15px;
+    margin-top:10px; */
+    height:25px;
+    width: 90%;
+}
+
+
+/* ---------------------------------------
+CardBox: Hold all the card information. Mana cost image, Card Name, Cropped cart art, & Card Quantity.
+------------------------------------------*/
+
+.CardBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid 1px black; */
+    overflow: hidden;
+    border-radius: 13px;
+    /* border-bottom:solid 1px white; */
+    background-repeat: no-repeat;
+    background-position-x: 125%;
+    background-size:100%, 75% auto;
+    /* background-position-y:20%; */
+    height:55px;
+   
+    
+    
+}
+
+.CardBox p{
+    font-family: 'UrbaneRounded-DemiBold';
+    /* font-family: 'Quicksand'; */
+    display: flex;
+    align-self: center;
+    margin:12px;
+    color:#f2f3f7;
+    /* font-size: large; */
+    /* -webkit-text-stroke: 2px black; */
+    text-shadow: -1.5px 0 0 #1D2542, 1.5px 0 0 #1D2542, 0 -1.5px 0 #1D2542, 0 1.5px 0 #1D2542;
+    
+}
+
+.CardBox img{
+    height: 25px;
+    width: 25px;
+}
+
+/* ---------------------------------------
+Unique Icon Boxes
+------------------------------------------*/
+
+.mana{
+    width:27px;
+    height:27px;
+    margin-left: 10px;
+}
+
+.count{
+    width:25px;
+    height:25px;
+    margin-right:15px;
+    margin-left: auto;
+}
+
+/* ---------------------------------------
+Submit Button(s)
+------------------------------------------*/
+.button{
+    width:20%;
+    height:40px;
+    font-family: 'UrbaneRounded-DemiBold';
+    margin-top:20px;
+    margin-bottom:5%;
+    background-color: #6475F8;
+    border:none;
+    border-radius: 13px;
+    color:white;
+}
+
+.button:hover{
+    /* background-color: #9EEAFA; */
+    transition:0.5s;
+    color:#1A275D;
+
+}
+
+.XButton{
+    border:none;
+    background:none;
+    height: 18px;
+    width: 18px;
+}
+
+.CodeHolder{
+    /* background-color:#9EEAFA; */
+    border-radius: 13px;
+    display:flex;
+    justify-content: center;
+    margin:0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-family:'UrbaneRounded-DemiBold';
+    font-size: 200%;
+    color: #00FDB8;
+    margin-left:20px;
+}
+
+.TitleCard{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-top:2%;
+    align-items: center;
+}
+
+.TitleCard img{
+    height:50px;
+    width:50px;
+}

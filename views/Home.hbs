@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Lineup Display</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="/home.css">
+        {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> --}}
+        <script src="/js/home.js"></script>
+    </head>
+
+    <body style="margin:0px;">
+    <div class="WrapBody">
+            <div class="TitleCard" >
+                <img src="/img/Logo-Filled.png">
+                <h1>RuneTactics</h1>
+            </div>
+
+            <div class="CodeContainer" style="display: flex; justify-content:center; align-items:center; margin-top:30px; margin-bottom:30px;">
+            <div class="VerticalThinBox">
+                <div class="CodeHolder">
+                    <input type="text" class="DeckCodeBox" id="DeckCode1" placeholder="Deckcode 1" style="width:100%;">
+                    {{!-- <input type="Image" src="./img/XButton.png" class="XButton" id="Xbutton1"> --}}
+                </div>
+            </div>
+            
+            <div class="VerticalThinBox">
+                <div class="CodeHolder">
+                    <input type="text" class="DeckCodeBox" id="DeckCode2" placeholder="Deckcode 2"  style="width:100%;">
+                    {{!-- <input type="Image" src="./img/XButton.png" class="XButton" id="Xbutton2"> --}}
+                </div>
+            </div>
+
+            <div class="VerticalThinBox"> 
+            <div class="CodeHolder">
+                <input type="text" class="DeckCodeBox" id="DeckCode3" placeholder="Deckcode 3"  style="width:100%;">
+                {{!-- <input type="Image" src="./img/XButton.png" class="XButton" id="Xbutton3"> --}}
+            </div>
+            </div>
+             <input type="Image" class="submitCodesButton" id="SubmitDeckCodes" src="./img/SubmitButton1.png" style="position:absolute; right:8%;">
+        </div>
+
+    </div>
+    {{> footer}}
+    </body>
+</html>

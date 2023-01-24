@@ -1,0 +1,37 @@
+/* ThreeDecks = Radio Buttons */
+.ThreeDecks{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ThreeDecks input[type="radio"] {    
+    opacity: 0;
+    position: fixed;
+    width: 0; 
+    
+}
+
+/* .ThreeDecks label {
+    font-family: large;
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 4px; 
+    cursor: pointer;
+     
+ } */
+
+
+.ThreeDecks label:hover{
+    background-color:#ABD4E3;
+}
+
+.ThreeDecks input[type="radio"]:checked+label {
+    background-color: #76cf9f;
+}
+
+/* Deckdisplay */

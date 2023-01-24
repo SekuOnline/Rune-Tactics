@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Lineup Display</title>
+        <link rel="stylesheet" href="/styles.css">
+        {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> --}}
+        <script src="/js/lineup.js"></script>
+    </head>
+
+    <body style="margin:0px;">
+    <div class="WrapBody">
+        <div class="TitleCard" >
+            <img src="/img/Logo-Filled.png">
+            <h1>RuneTactics</h1>
+        </div>
+    
+    <div class="blank" style="display:flex; flex-direction:column">
+
+        <div class="CodeContainer" style="display: flex; justify-content:center; align-items:center; margin-top:30px; margin-bottom:30px;">
+            <div class="VerticalThinBox">
+                <div class="CodeHolder">
+                    <input type="text" class="DeckCodeBox" id="DeckCode1" placeholder="Deckcode 1" value={{deck1}}>
+                    <input type="Image" src="/img/XButton.png" class="XButton" id="Xbutton1">
+                </div>
+            </div>
+            
+
+
+            <div class="VerticalThinBox">
+                <div class="CodeHolder">
+                    <input type="text" class="DeckCodeBox" id="DeckCode2" placeholder="Deckcode 2" value={{deck2}}>
+                    <input type="Image" src="/img/XButton.png" class="XButton" id="Xbutton2">
+                </div>
+            </div>
+            
+
+
+            <div class="VerticalThinBox"> 
+                <div class="CodeHolder">
+                    <input type="text" class="DeckCodeBox" id="DeckCode3" placeholder="Deckcode 3" value={{deck3}}>
+                    <input type="Image" src="/img/XButton.png" class="XButton" id="Xbutton3">
+                </div>
+            </div>
+             <input type="Image" class="submitCodesButton" id="SubmitDeckCodes" src="/img/SubmitButton1.png" style="position:absolute; right:8%;">
+             
+            </div>
+            
+
+
+        <div class="DeckContainer">
+            <div class="VerticalThinBox" id="Deck1VB" style="display:none;">
+                <div id="DeckBox1" class="DeckBox"></div>
+            </div>
+            <div class="HiddenVB" id = "HiddenVB1" style="display:none;"></div>
+
+
+            <div class="VerticalThinBox" id="Deck2VB" style="display:none;">
+                <div id="DeckBox2" class="DeckBox"></div>
+            </div>
+            <div class="HiddenVB" id = "HiddenVB2" style="display:none;"></div>
+
+
+            <div class="VerticalThinBox" id="Deck3VB" style="display:none;">
+                <div id="DeckBox3" class="DeckBox"></div>
+            </div>
+            <div class="HiddenVB" id = "HiddenVB3" style="display:none;"></div>
+
+            
+
+        </div>    
+
+        {{!-- <input type="button" class="button" id="SubmitDeckCodes" style="align-self:center" value="Submit Lineup"> --}}
+        
+        {{!-- <input type="button" class="button" id="ClearCodes" style="align-self:center" value="Clear Fields"> --}}
+        
+        {{!-- <input type="button" id= "SubmitDeckCodes" value="➜" style="margin-top: 20px; width: 10%"> --}}
+    </div>
+    </div>
+
+    {{> footer}}
+
+    </body>
+
+    
+
+</html>

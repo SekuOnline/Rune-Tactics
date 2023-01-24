@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'UrbaneRounded-DemiBold';
+    src: url('/UrbaneRounded-DemiBold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Quicksand';
+    src: url('Quicksand-Medium.ttf') format('truetype');
+}
+
+html, body{
+    margin:0px;
+    /* background-color: #1A275d; */
+    /* background-color: #1D2542; */
+    height:100%;
+    background-image: url("./img/RuneTactics_Homepage.jpg")
+}
+
+h1{
+    font-family:'UrbaneRounded-DemiBold';
+    font-size: 700%;
+    color: #00FDB8;
+    margin-left:20px;
+}
+
+.TitleCard{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-top:10%;
+    align-items: center;
+}
+
+.TitleCard img{
+    height:150px;
+    width:150px;
+}
