@@ -36,33 +36,13 @@ exports.lineup = function(request, response){
         else{
            
            // console.log("False = "+isValidCode(DeckCodes[i]))
-            SubmitDeckCodes[i] = "invalid"
+            if (DeckCodes[i] != "none"){SubmitDeckCodes[i] = "invalid"}
+            else{SubmitDeckCodes[i] = "none"}
+            
         }
     }
     
-    //console.log(SubmitDeckCodes)
-    // for(let i = 0; i < 3; i++){
-    //     if (SubmitDeckCodes[i] != 'invalid'){
-    //         let deck = SubmitDeckCodes[i]
-    //         for (let k = 0; k <deck.length; k++){
-    //             console.log("card:")
-    //             console.log(deck[k].code)
-    //             let set = deck[k].code.substring(0, 2);
-    //             console.log(set)
-                
-    //             if (set == "06"){
-    //                 set = setCodes[set][0]
-    //             }
-    //             else{
-    //                 set = setCodes[set]
-    //             }
-    //             console.log(set)
-    //             getSet(set, deck[k].code)
-                
-    //         }
-            
-    //     }
-    // }
+    
     response.setHeader("Content-Type", "application/json")
     // response.write(SubmitDeckCodes);
     // response.end();

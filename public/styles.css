@@ -11,12 +11,22 @@ Global
     src: url('Quicksand-Medium.ttf') format('truetype');
 }
 
-html, body{
+html{
+    /* min-height:100%; */
+}
+body{
+    display:flex;
+    flex-direction: column;
     margin:0px;
     /* background-color: #1A275d; */
     /* background-color: #1D2542; */
-    height:100%;
-    background-image: url("./img/RuneTactics_Homepage.jpg")
+    /* height:100%; */
+    min-height:100%;
+    /* height:100%; */
+    background-image: url("./img/RuneTactics_Homepage.jpg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    
 }
 
 a{
@@ -45,10 +55,18 @@ input[type=text]{
     background-color: #0b0c19;
     display:flex;
     align-items: flex-start;
-    position: relative;
+    position: fixed;
     bottom: 0%;
     width: 100%;
     height: 65px;
+    margin-top:auto;
+}
+
+.footer p{
+    margin-left:auto; 
+    margin-right:2%; 
+    font-family:'Quicksand'; 
+    color:rgb(190, 190, 190);
 }
 .footer input[type="image"]{
     margin-right:5px;
@@ -60,8 +78,8 @@ input[type=text]{
 }
 
 .WrapBody{
-    min-height: 100%;
-    margin-bottom: -64px;
+    /* min-height: 100%; */
+    /* margin-bottom: -65px; */
 }
 
 /* ---------------------------------------
@@ -101,7 +119,6 @@ nav.horizontal{
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
-
 
 
 /* ---------------------------------------
@@ -291,4 +308,34 @@ h1{
 .TitleCard img{
     height:50px;
     width:50px;
+}
+
+.InvalidBox{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px black; */
+    overflow: hidden;
+    border-radius: 13px;
+    /* border-bottom:solid 1px white; */
+   
+    /* background-position-y:20%; */
+    height:31px;
+    
+    
+}
+
+.InvalidBox p{
+    font-family: 'UrbaneRounded-DemiBold';
+    /* font-family: 'Quicksand'; */
+    display: flex;
+    align-self: center;
+    margin:12px;
+    color:#f2f3f7;
+    /* font-size: large; */
+    /* -webkit-text-stroke: 2px black; */
+    text-shadow: -1.5px 0 0 #1D2542, 1.5px 0 0 #1D2542, 0 -1.5px 0 #1D2542, 0 1.5px 0 #1D2542;
+    
 }

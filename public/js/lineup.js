@@ -24,11 +24,19 @@ async function ProcessDecks(){
     let Deck3 = document.getElementById("DeckCode3").value.trim();
 
     //If any codes are not filled, do not procede.
-    if(Deck1 == '' || Deck2 == "" || Deck3 == ""){
-        alert("Please fill all deck-codes before submitting")
+    if(Deck1 == '' && Deck2 == "" && Deck3 == ""){
+        alert("Please fill at least one deck code before submitting")
     }
     else{
-
+        if(Deck1 == ''){
+            Deck1 = 'none';
+        }
+        if(Deck2 == ''){
+            Deck2 = 'none';
+        }
+        if(Deck3 == ''){
+            Deck3 = 'none';
+        }
         //let xml = new XMLHttpRequest();
         let deckUrl = "/Lineup/"+Deck1+"/"+Deck2+"/"+Deck3
 
@@ -57,24 +65,29 @@ async function ProcessDecks(){
                     allSets = allSets.concat(arrays[i])
                 }
                 
-                //console.log("allsets")
-                //console.log(allSets)
-                //Querying decks here
-                //Loop through 3 decks
+                
                 for (let deckIndex = 0; deckIndex < 3; deckIndex++){
                     //Check invalid code:
                     let currDeck = decks[deckIndex];
                     //console.log(currDeck)
                     let deckBox = "DeckBox"+(deckIndex+1)
                    
-                    document.getElementById("HiddenVB"+(deckIndex+1)).style.display = 'none'
+                    
                     
                     
                     let fullDeck = []
                     if (currDeck == 'invalid'){
-                        document.getElementById(deckBox).innerHTML = "<div class='CardBox'><p>Invalid Code</p></div>"
+                        
+                        document.getElementById(deckBox).innerHTML = "<div class='InvalidBox'><p>Invalid Code</p></div>"
+                        document.getElementById("HiddenVB"+(deckIndex+1)).style.display = 'none'
+                        document.getElementById("Deck"+(deckIndex+1)+"VB").style.display = 'flex';
+                    }
+                    else if (currDeck == 'none'){
+                        clearDeck((deckIndex+1))
                     }
                     else{
+                        console.log('here')
+
                         document.getElementById(deckBox).innerHTML = ""
                         // console.log( document.getElementById(deckBox).innerHTML)
                         //Loop through cards
@@ -101,18 +114,13 @@ async function ProcessDecks(){
                         }
                        
                         displayDeck(fullDeck, deckBox)
-                        
-                        
+                        console.log('here')
+                        document.getElementById("HiddenVB"+(deckIndex+1)).style.display = 'none'
+                        document.getElementById("Deck"+(deckIndex+1)+"VB").style.display = 'flex';
                     }
                 }
 
-                for(let deckIndex = 1; deckIndex <= 3; deckIndex++){
-                    let VB = document.getElementById("Deck"+(deckIndex)+"VB")
-                        //console.log(VB.style.display)
-                        if (VB.style.display == "none"){
-                            VB.style.display = "flex";
-                        }
-                }
+                
 
             })
         });

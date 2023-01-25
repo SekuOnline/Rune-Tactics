@@ -12,11 +12,20 @@ function RerouteDecks(){
     //console.log(Deck1 + "\n" + Deck2 + "\n"+Deck3)
 
     //If any codes are not filled, do not procede.
-    if(Deck1 == '' || Deck2 == "" || Deck3 == ""){
-        alert("Please fill all deck-codes before submitting")
+    if(Deck1 == '' && Deck2 == "" && Deck3 == ""){
+        alert("Please fill at least one deck code before submitting")
     }
-
+    
     else{
-       window.location.href = "/LUDisplay/"+Deck1+"/"+Deck2+"/"+Deck3
+        if(Deck1 == ''){
+            Deck1 = "none";
+        }
+        if(Deck2 == ''){
+            Deck2 = "none";
+        }
+        if(Deck3 == ''){
+            Deck3 = "none";
+        }
+        window.location.href = "/LUDisplay/"+Deck1+"/"+Deck2+"/"+Deck3
     }
 }
