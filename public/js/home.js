@@ -1,6 +1,17 @@
+const deckCodeBoxes = document.getElementsByClassName("DeckCodeBox");
+
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("SubmitDeckCodes").addEventListener('click', RerouteDecks)
     // document.getElementById("ClearCodes").addEventListener('click', clearFields)
+    for (let i = 0; i < deckCodeBoxes.length; i++){
+        deckCodeBoxes[i].addEventListener("keypress", function(event){
+            if (event.key === "Enter"){
+                event.preventDefault();
+                console.log("Here")
+                RerouteDecks();
+            }
+        })
+    }
 })
 
 

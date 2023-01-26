@@ -5,7 +5,7 @@
 
 @font-face{
     font-family: 'Quicksand';
-    src: url('Quicksand-Medium.ttf') format('truetype');
+    src: url('Quicksand-Modified.otf') format('opentype');
 }
 
 html, body{
@@ -13,7 +13,11 @@ html, body{
     /* background-color: #1A275d; */
     /* background-color: #1D2542; */
     height:100%;
-    background-image: url("./img/RuneTactics_Homepage.jpg")
+    min-height:100%;
+    background-image: url("./img/RuneTactics_Homepage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 h1{
@@ -35,3 +39,8 @@ h1{
     height:150px;
     width:150px;
 }
+
+.DeckCodeBox{
+    font-family: "Quicksand";
+}
+

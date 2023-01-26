@@ -6,5 +6,18 @@
     "morgan": "^1.10.0",
     "node-fetch": "^3.3.0",
     "runeterra": "^4.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "rune-tactics",
+  "version": "1.0.1",
+  "description": "A basic Legends of Runeterra web-app ",
+  "main": "server.js",
+  "author": "Seku / David Sedarous",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "github.com/SekuOnline/Rune-Tactics"
   }
 }

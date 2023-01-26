@@ -8,7 +8,7 @@ Global
 
 @font-face{
     font-family: 'Quicksand';
-    src: url('Quicksand-Medium.ttf') format('truetype');
+    src: url('Quicksand-Modified.otf') format('opentype');
 }
 
 html{
@@ -66,7 +66,8 @@ input[type=text]{
     margin-left:auto; 
     margin-right:2%; 
     font-family:'Quicksand'; 
-    color:rgb(190, 190, 190);
+    color:grey;
+    font-size:small;
 }
 .footer input[type="image"]{
     margin-right:5px;
@@ -158,10 +159,12 @@ VerticalThinBox: Within DeckContainers. Holds DeckBoxes and CardBoxes
     border-radius: 18px;
     margin-left:2%;
     margin-right:2%;
+    margin-bottom:30px;
     overflow: hidden;
     /* margin-top: 20px; */
     height: auto;
     background-color: #6475F8;
+   
 }
 
 .HiddenVB{
