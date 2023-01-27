@@ -162,7 +162,7 @@ VerticalThinBox: Within DeckContainers. Holds DeckBoxes and CardBoxes
     margin-bottom:30px;
     overflow: hidden;
     /* margin-top: 20px; */
-    height: auto;
+    height: fit-content;
     background-color: #6475F8;
    
 }
@@ -341,4 +341,11 @@ h1{
     /* -webkit-text-stroke: 2px black; */
     text-shadow: -1.5px 0 0 #1D2542, 1.5px 0 0 #1D2542, 0 -1.5px 0 #1D2542, 0 1.5px 0 #1D2542;
     
+}
+
+.CodeContainer{
+    display: flex; 
+    justify-content:center; 
+    margin-top:30px; 
+    margin-bottom:30px;
 }
