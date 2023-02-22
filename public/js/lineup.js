@@ -109,7 +109,7 @@ async function ProcessDecks(){
                             for(let setIndex = 0; setIndex < allSets.length; setIndex++){
                                 if (allSets[setIndex].cardCode == currCard.code){
                                     
-                                    let cardInfo = {"Cost": allSets[setIndex].cost, "Name": allSets[setIndex].name, "Type":allSets[setIndex].type, "Count":currCard.count, "Region":allSets[setIndex].regions[0], "Art":allSets[setIndex].assets[0].fullAbsolutePath}
+                                    let cardInfo = {"Cost": allSets[setIndex].cost, "Name": allSets[setIndex].name, "Type":allSets[setIndex].type, "Count":currCard.count, "Region":allSets[setIndex].regions[0], "Art":allSets[setIndex].assets[0].fullAbsolutePath, "GameArt":allSets[setIndex].assets[0].gameAbsolutePath}
                                     
                                     fullDeck.push(cardInfo)
                                     //console.log(cardInfo)
@@ -161,16 +161,20 @@ function displayDeck(deck, deckBox){
         else{
             backgroundY = "40%"
         }
-        card = "<div class='CardBox' style='background-image: linear-gradient(to right, "+regionColors[deck[i]["Region"]]+" 30%, rgba(0,0,0,0) 70%), url("+deck[i]["Art"]+"); background-position-y:"+backgroundY+"'>";
-        card += "<img class='mana' src='/img/Mana-"+deck[i]["Cost"]+".png'></img>"
+        card = "<div class='CardBox' id = '"+deck[i]["Name"] +"' style='background-image: linear-gradient(to right, "+regionColors[deck[i]["Region"]]+" 30%, rgba(0,0,0,0) 70%), url("+deck[i]["Art"]+"); background-position-y:"+backgroundY+"'>";
+        // card += '<span> <img src="'+deck[i]["FullArt"]+'" alt="Art: '+deck[i]["Name"]+'"> </span>'
+        card += "<img class='mana' src='/img/Mana-"+deck[i]["Cost"]+".png' alt='Cost: "+deck[i]["Cost"]+"'></img>"
         card += "<p>"+deck[i]["Name"]+"</p>"
-        card += "<img class='count' src='/img/Qty-"+deck[i]["Count"]+".png'></img>"
-        
+        card += "<img class='count' src='/img/Qty-"+deck[i]["Count"]+".png' alt='Count: "+deck[i]["Count"]+"'></img>"
+        card+= "<div class='overlay'> <img src='"+deck[i]["GameArt"]+"'></img></div>"
         card += "</div>"
+        console.log(deck[i]["Name"])
+        
        // console.log(deck[i]["Art"])
         document.getElementById(deckBox).innerHTML += card;
+        // document.getElementById(deck[i]["Name"]).addEventListener('onmouseleave', removeArt)
+        
     }
-   
     
 }
 
