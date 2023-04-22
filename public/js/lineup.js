@@ -1,4 +1,4 @@
-const setCodes = ["set1", "set2", "set3", "set4", "set5", "set6", "set6cde"]
+const setCodes = ["set1", "set2", "set3", "set4", "set5", "set6", "set6cde", "set7"]
 // const regionColors = {"Bandle City":"#9fc000", "Targon":"#6939cc", "Shurima":"#eec01e", "Noxus": "#b6001e", "Freljord":"#87d3e9", "Demacia":"#e9dab3", "Ionia":"#f86bb3",  "Bilgewater":"#b5452c", "Piltover & Zaun":"#ff8135", "Runeterra":"#81704a", "Shadow Isles":"#00a384"}
 const regionColors = {"Bandle City":"rgba(159, 192, 0, 1)", "Targon":"rgba(105, 57, 204, 1)", "Shurima":"rgba(238, 192, 30,1)", "Noxus": "rgba(182, 0, 30,1)", "Freljord":"rgba(135, 211, 233, 1)", "Demacia":"rgba(233, 218, 179, 1)", "Ionia":"rgba(248, 107, 179, 1)",  "Bilgewater":"rgba(181, 69, 44,1)", "Piltover & Zaun":"rgba(255, 129, 53,1)", "Runeterra":"rgba(129, 112, 74, 1)", "Shadow Isles":"rgba(0, 163, 132,1)"}
 const CardBox = "<div class=CardBox>"
