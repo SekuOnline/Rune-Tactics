@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rune-tactics.com",
   "dependencies": {
     "express": "^4.18.2",
     "hbs": "^4.2.0",
@@ -8,7 +9,9 @@
     "runeterra": "^4.0.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "node server.js"
   },
   "name": "rune-tactics",
   "version": "1.0.1",
@@ -19,5 +22,8 @@
   "repository": {
     "type": "git",
     "url": "github.com/SekuOnline/Rune-Tactics"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
