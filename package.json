@@ -12,6 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "node server.js"
+    
   },
   "name": "rune-tactics",
   "version": "1.0.1",
