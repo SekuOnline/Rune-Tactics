@@ -15,7 +15,8 @@ The app informs users if the deck code submitted is invalid.
 
 ![RT 2](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/693454d9-6fd3-424f-8f73-9da35418f416)
 
-
+The user may hover over any card to view additional information within the margin:
+![image](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/78db6689-32dd-44e3-ba10-c423d25a89e3)
 
 
 Build Details:
