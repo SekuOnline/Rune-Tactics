@@ -1,6 +1,9 @@
 JS, HTML, & CSS done by David Sedarous,
 Assets done by Emma Sawyer.
 
+
+![RT-1](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/09a9db7d-3b17-4b59-804f-f0f1bfe41299)
+
 This project is used to display information for the Digital Card Game Legends of Runeterra.
 It was done to practice Web Development skills, as well as to provide a tool for the games online community.
 The project was uploaded in January 2023, and has since been taken down due to upkeeping costs.
@@ -8,3 +11,6 @@ The project was uploaded in January 2023, and has since been taken down due to u
 The app allowed the user to display up to 3 decks using a 'deck code' used within the game.
 The deck codes would be decoded using a js library into an array containing information about each card in the deck.
 This array would then retrieve assets to display all decks.
+The app informs users if the deck code submitted is invalid.
+
+![RT 2](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/693454d9-6fd3-424f-8f73-9da35418f416)
