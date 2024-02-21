@@ -13,10 +13,11 @@ The deck codes would be decoded using a js library into an array containing info
 This array would then retrieve assets to display all decks.
 The app informs users if the deck code submitted is invalid.
 
-![RT 2](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/693454d9-6fd3-424f-8f73-9da35418f416)
+![RT 4](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/251e33a3-d533-4b87-b95e-1ced23497126)
 
 The user may hover over any card to view additional information within the margin:
-![image](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/dc8d19bd-4792-475d-b20d-d0a9aada83cd)
+
+![RT05](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/2519d60b-df00-436b-8300-f58a7dfd9b16)
 
 
 Build Details:
