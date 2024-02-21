@@ -6,17 +6,18 @@ Assets done by Emma Sawyer.
 
 This project is used to display information for the Digital Card Game Legends of Runeterra.
 It was done to practice Web Development skills, as well as to provide a tool for the games online community.
-The project was uploaded in January 2023, and has since been taken down due to upkeeping costs.
+The project was uploaded in January 2023, and has since been taken down due tothe upkeeping costs of GCP.
 
 The app allowed the user to display up to 3 decks using a 'deck code' used within the game.
 The deck codes would be decoded using a js library into an array containing information about each card in the deck.
 This array would then retrieve assets to display all decks.
 The app informs users if the deck code submitted is invalid.
 
-![RT 2](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/693454d9-6fd3-424f-8f73-9da35418f416)
+![RT 4](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/99398151-01b9-4662-ab9b-1de3d03509c7)
 
 The user may hover over any card to view additional information within the margin:
-![image](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/dc8d19bd-4792-475d-b20d-d0a9aada83cd)
+
+![image](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/04d14611-b157-4149-bfb7-7dadad252156)
 
 
 Build Details:
