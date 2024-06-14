@@ -1,6 +1,8 @@
-JS, HTML, & CSS done by David Sedarous,
-Assets done by Emma Sawyer.
+### JS, HTML, & CSS done by David Sedarous,
+### Assets done by [Emma Sawyer](https://EmmaSawyer.art)
 
+
+# Introduction to Rune-Tactics
 
 ![RT-1](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/09a9db7d-3b17-4b59-804f-f0f1bfe41299)
 
@@ -20,18 +22,18 @@ The user may hover over any card to view additional information within the margi
 ![RT05](https://github.com/SekuOnline/Rune-Tactics/assets/93288807/2519d60b-df00-436b-8300-f58a7dfd9b16)
 
 
-Build Details:
+### Build Details:
 Node version: 18.13.0
 NPM version:  8.19.0
 
-Build Instructions:
+### Build Instructions:
 1. Download and extract the zip file.
 2. Open a command terminal in the immediate directory.
 3. Run 'npm install'
 4. Run 'node server.js'
 5. Visit https://localhost:3000
 
-Additional Information:
+### Additional Information:
 The app pulls card information by set from json files posted online. 
 To add a set:
 1. Go to /Rune-Tactics-Main/public/js
